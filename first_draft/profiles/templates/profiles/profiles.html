@@ -1,0 +1,15 @@
+{% extends 'first_app/base.html' %}
+
+{% block title %}
+Profiles
+{% endblock %}
+
+  {% block content %}
+    <h1>Profiles:</h1>
+    <ul>
+      {% for profile in object_list %}
+        <li><a href="{% url 'profiles:profile' profile.id %}">{{ profile.name }}</a></li>
+        <br>
+      {% endfor %}
+    </ul>
+  {% endblock content %}

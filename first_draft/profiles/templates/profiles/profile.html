@@ -1,0 +1,16 @@
+{% extends 'first_app/base.html' %}
+
+{% block title %}
+Profile 
+{% endblock %}
+
+  {% block content %}
+      <h1>{{ profile.name }}</h1>
+      <br>
+      <h2>Age: {{ profile.age }}</h2>
+      <h2>Rate: ${{ profile.rate }}</h2>
+      <br>
+      <h3>Description: {{ profile.description }}</h3>
+      <a href="{% url 'profiles:createprofile'  %}">create profile</a>
+  {% endblock content %}
+ 
