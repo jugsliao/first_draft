@@ -1,0 +1,1 @@
+settings and url for the apps
